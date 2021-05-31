@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>InsuGui</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+        <link rel="apple-touch-icon" sizes="180x180" href="./Imagenes/apple-touch-icon.png">
+        <!----- icono para apple y safari --> 
+        <link rel="icon" type="image/png" sizes="32x32" href="./Imagenes/favicon-32x32.png">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+            <!-- tipo de letra -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+            <!-- carga CSS -->
+        <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light shadow">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                    <i class='bx bxs-shapes bx-sm text-light'></i>
+                    <!--	bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+                <!--Logo-->
+               <span class="text-dark h4">Insu</span><span class="text-light h4">Gui</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button id="btn-hamb" class="navbar-toggler border-0 " 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="index.html">Inicio</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="work.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-light'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-light'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-light'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start pricing -->
+    <div class="container-lg py-5">
+        <div class="col-md-12 m-auto text-center py-5">
+            <h1 class="pricing-header h2 semi-bold-600">Combos para Instituciones</h1>
+            <!-- <p class="pricing-footer">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut facilisis.
+            </p> -->
+        </div>
+
+
+        <div class="row px-lg-3">
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5 btnw1">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Básico</h2>
+                        <p>$10575.95</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled light-300">
+                            <li><i class="bx bxs-circle me-2"></i>10 Jueguetes didácticos</li>
+                            <li><i class="bx bxs-circle me-2"></i>2 Juegos para Plaza Blanda</li>
+                            <li><i class="bx bxs-circle me-2"></i>10 Libros</li>
+                            <li><i class="bx bxs-circle me-2"></i>50 Útiles</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-5">
+                            <a href="#" class="btn rounded-pill px-4 btnw bg1 text-light btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pt-sm-0 pt-3 px-xl-3">
+                <div class="pricing-table card bg2 h-100 card-rounded shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center text-white align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text-white py-3"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Completo</h2>
+                        <p>$30899.99</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled light-300">
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>50 Juguetes didáctico</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>6 Juegos para Plaza Blanda</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>25 Libros</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>100 Útiles</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-5 pb-2">
+                            <a href="#" class="btn rounded-pill px-4 btnw bg1 text-light btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 btnw1 py-5">
+                    <div class="pricing-table-body card-body text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Premium</h2>
+                        <p>$75645.45</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled light-300">
+                            <li><i class="bx bxs-circle me-2"></i>100 Juguetes didácticos</li>
+                            <li><i class="bx bxs-circle me-2"></i>12 Juegos para Plaza Blanda</li>
+                            <li><i class="bx bxs-circle me-2"></i>50 Libros</li>
+                            <li><i class="bx bxs-circle me-2"></i>200 Útiles</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-1">
+                            <a href="#" class="btn rounded-pill px-4 btnw bg1 text-light btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+
+
+
+
+    <!-- Start Pricing Horizontal Section -->
+    <section class="bg-light pt-sm-0 py-5">
+        <div class="container py-5">
+            
+            <h1 class="h2 semi-bold-600 text-center mt-2">OFERTAS</h1>
+            <p class="text-center pb-5 light-300">Toda oferta está sujeta a modificaciones por disponibilidad de stock.</p>
+
+            <!-- Start Pricing Horizontal -->
+            <div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center bg2 text-light py-4">
+                    <i class="display-1 bx bxs-offer pt-4"></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Didáctico</h5>
+                </div>
+                <div class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li><i class="bx bxs-circle me-2"></i>3 Juegos didácticos</li>
+                        <li><i class="bx bxs-circle me-2"></i>2 Libros</li>
+                        <li><i class="bx bxs-circle me-2"></i>1 Cuaderno</li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$7854.21</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline btnw bg1 text-light mb-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Horizontal -->
+
+            <!-- Start Pricing Horizontal -->
+            <div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden my-5 bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center bg2 text-light py-4">
+                    <i class="display-1 bx bxs-offer pt-4"></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Motricidad</h5>
+                </div>
+                <div class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li><i class="bx bxs-circle me-2"></i>1 Juego de PB a elección</li>
+                        <li><i class="bx bxs-circle me-2"></i>3 Juegos de bloques</li>
+                        <li><i class="bx bxs-circle me-2"></i>1 Regalo</li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$8950.69</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline btnw bg1 text-light mb-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Horizontal -->
+
+            <!-- Start Pricing Horizontal -->
+            <div class="pricing-horizontal row col-10 m-auto d-flex shadow-sm rounded overflow-hidden bg-white">
+                <div class="pricing-horizontal-icon col-md-3 text-center bg2 text-light py-4">
+                    <i class="display-1 bx bxs-offer pt-4"></i>
+                    <h5 class="h5 semi-bold-600 pb-4 light-300">Lecto-Escritura</h5>
+                </div>
+                <div class="pricing-horizontal-body offset-lg-1 col-md-5 col-lg-4 d-flex align-items-center pl-5 pt-lg-0 pt-4">
+                    <ul class="text-left px-4 list-unstyled mb-0 light-300">
+                        <li><i class="bx bxs-circle me-2"></i>3 Libros a elección</li>
+                        <li><i class="bx bxs-circle me-2"></i>2 Cuadernos</li>
+                        <li><i class="bx bxs-circle me-2"></i>1 Caja de lapices/crayones</li>
+                        <li><i class="bx bxs-circle me-2"></i>1 Block de hojas de dibujo</li>
+                    </ul>
+                </div>
+                <div class="pricing-horizontal-tag col-md-4 text-center pt-3 d-flex align-items-center">
+                    <div class="w-100 light-300">
+                        <p>$5520.35</p>
+                        <a href="#" class="btn rounded-pill px-4 btn-outline btnw bg1 text-light mb-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Horizontal -->
+
+        </div>
+    </section>
+    <!--End Pricing Horizontal Section-->
+
+    <section class="container py-5">
+
+        <h1 class="h2 semi-bold-600 text-center pt-5">ENVÍOS</h1>
+        <p class="text-center pb-5 light-300">
+            El valor puede variar segun el país y ciudad de envío.
+        </p>
+
+        <div class="row d-flex align-items-center pb-5">
+
+            <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2">
+                <img class="rounded float-right" src="./Imagenes/baner4.svg">
+            </div>
+
+            <div class="col-lg-6">
+
+                <!-- Start Pricing List -->
+                <div class="pricing-list shadow-sm rounded-top rounded-3 py-sm-0 py-5 btnw1">
+                    <div class="row p-2">
+                        <div class="pricing-list-icon col-3 text-center m-auto text-secondary ml-5 py-2">
+                            <i class='display-3 bx bxs-truck text'></i>
+                        </div>
+                        <div class="pricing-list-body col-md-5 align-items-center pl-3 pt-2">
+                            <ul class="list-unstyled text-center light-300">
+                                <li class="h5 semi-bold-600 mb-0 mt-3">Argentina</li>
+                                <!-- <li>En toda la Argentina</li> -->
+                            </ul>
+                        </div>
+                        <div class="pricing-list-footer col-4 text-center m-auto align-items-center">
+                            <a href="#" class="btn rounded-pill px-4 bg1 text-light light-300">Gratis</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing List -->
+
+                <!-- Start Pricing List -->
+                <div class="pricing-list shadow-sm py-sm-0 py-5 btnw1">
+                    <div class="row p-2">
+                        <div class="pricing-list-icon col-3 text-center m-auto text-secondary ml-5 py-2">
+                            <i class='display-3 bx bxs-truck text'></i>
+                        </div>
+                        <div class="pricing-list-body col-md-5 align-items-center pl-3 pt-2">
+                            <ul class="list-unstyled text-center light-300">
+                                <li class="h5 semi-bold-600 mb-0 mt-3">Brasil</li>
+                                <!-- <li></li> -->
+                            </ul>
+                        </div>
+                        <div class="pricing-list-footer col-sm-4 col-5 text-center m-auto align-items-center">
+                            <a href="#" class="btn rounded-pill px-4 bg1 text-light light-300">AR$1500</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing List -->
+
+                <!-- Start Pricing List -->
+                <div class="pricing-list shadow-sm rounded-botton rounded-3 py-sm-0 py-5 btnw1">
+                    <div class="row p-2">
+                        <div class="pricing-list-icon col-sm-3 text-center m-auto text-secondary ml-5 py-2">
+                            <i class='display-3 bx bxs-truck text'></i>
+                        </div>
+                        <div class="pricing-list-body col-md-5 align-items-center pl-3 pt-2">
+                            <ul class="list-unstyled text-center light-300">
+                                <li class="h5 semi-bold-600 mb-0 mt-3">México</li>
+                                <!-- <li>Story Telling y envío de mails.</li> -->
+                            </ul>
+                        </div>
+                        <div class="pricing-list-footer col-sm-4 col-5 text-center m-auto align-items-center">
+                            <a href="#" class="btn rounded-pill px-4 bg1 text-light light-300">AR$3000</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing List -->
+                <p class="text-center"><a class="btn px-4 mt-4 mx-auto btn-outline-light bg1 text-light btnw" href="#">Consultar por otro país</a></p>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Start Footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bxs-shapes bx-sm text-light'></i>
+                        <span class="text-dark h5">Insu</span><span class="text-light h5 semi-bold-600">Gui</span>
+                    </a>
+                    <p class="text-dark my-lg-4 my-2">
+                        La vida nos hizo amigas y nuestra pasión por enseñar, socias. Hoy junto a Firu y Tito, comenzamos la revolución de la enseñanza en América-Latina.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300 nS">Nuestro Sitio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark" 
+                                href="index.html">Inicio</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                                href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                                href="work.html">Productos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-dark py-1" 
+                                href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                                href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300 tN">Trabaja con nosotros</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                            href="#">Envianos tu CV a:</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                            href="mailto:info@company.com">insuGui@rrhh.com</a> 
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                            href="mailto:info@company.com">trabajo@insuGui.com</a> 
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300 eE">Encontranos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                            href="tel:010-020-0340">+54 - 0555 - 3334</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                            href="mailto:info@company.com"> info@insuGui.com</a> 
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="w-100 py-3 bg2">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 InsuGui. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+                            href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

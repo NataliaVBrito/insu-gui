@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>InsuGui</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+        <link rel="apple-touch-icon" sizes="180x180" href="./Imagenes/apple-touch-icon.png">
+        <!----- icono para apple y safari --> 
+        <link rel="icon" type="image/png" sizes="32x32" href="./Imagenes/favicon-32x32.png">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+            <!-- tipo de letra -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+            <!-- carga CSS -->
+        <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light shadow">
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                    <i class='bx bxs-shapes bx-sm text-light'></i>
+                <!--Logo-->
+               <span class="text-dark h4">Insu</span><span class="text-light h4">Gui</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button id="btn-hamb" class="navbar-toggler border-0 " 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!---Opciones del Menu-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+                            <div class="flex-fill mx-xl-5 mb-2">
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="work.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-light rounded-pill px-3" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-light'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-light'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-light'></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+        <div class="banner-vertical-center-work container text-dark d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Nuestros Productos</h1>
+                <h3 class="h4 pb-2 regular-400"><br><br><br><br></h3>
+               <a href="contact.html"><button type="submit" class="btn rounded-pill bg2 btn-outline-light px-4 me-4 light-300">Consultas</button></a>
+             <!-- <a href="pricing.html"><button type="submit" class="btn rounded-pill bg2 text-light px-4 light-300">Envios</button></a> -->
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="row justify-content-center my-5">
+            <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+                <a class="filter-btn btn btnw rounded-pill btn-outline border-0 m-md-2 px-md-4" data-filter=".project" href="#">Todos</a>
+                <a class="filter-btn btn btnw rounded-pill btn-outline border-0 m-md-2 px-md-4" data-filter=".juguetes" href="#">Juguetes Didácticos</a>
+                <a class="filter-btn btn btnw rounded-pill btn-outline border-0 m-md-2 px-md-4" data-filter=".plaza" href="#">Plaza Blanda</a>
+                <a class="filter-btn btn btnw rounded-pill btn-outline border-0 m-md-2 px-md-4" data-filter=".utiles" href="#">Útiles</a>
+                <a class="filter-btn btn btnw rounded-pill btn-outline border-0 m-md-2 px-md-4" data-filter=".libros" href="#">Libros</a>
+            </div>
+        </div>
+        <div class="row projects gx-lg-5">
+            <!-- 1 --> 
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project utiles">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./Imagenes/p1.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Plastilina</h5>
+                        <p class="card-text light-300 text-dark">
+                            La plastilina es un material plástico empleado para moldear. 
+                            Es apto para el uso de los niños.
+                            Lo podés encontrar en todos los colores.
+                            <br><br><br><br>
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                              Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 2 -->
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project utiles">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p2.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Crayones</h5>
+                        <p class="card-text light-300 text-dark">
+                            El crayón es una barra hecha de cera, carboncillo, tiza u otros como materiales que se presenta en diferentes colores y que sirve para dibujar y colorear.
+                            <br><br><br>
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 3 -->
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project plaza">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p3.png">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Tobogán</h5>
+                        <p class="card-text light-300 text-dark">
+                            Este práctico tobogán es compacto para guardar ya que se desarma con facilidad. Posee escalones antideslizantes y se puede usar en el interior o en el exterior.Para empezar a sentir el vértigo de lanzarse desde chiquitos
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 4 -->
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project plaza">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p4.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Triciclo</h5>
+                        <p class="card-text light-300 text-dark">
+                            A partir de los 3 años los paseos pueden ser una verdadera aventura. Vivilo con este super Triciclo,  cómodo, con barra de arrastre, porta objetos y pedales antideslizantes.
+                            <br><br><br>
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 5 -->
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project juguetes">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p5.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Autito para armar</h5>
+                        <p class="card-text light-300 text-dark">
+                            Desarrolla todo su ingenio e imaginacion con este grandioso kit para ensamblar sus propios autitos con pasajeros inclusive.
+                            <br><br><br><br>
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 6 -->
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project juguetes">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p6.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Juego de cocina</h5>
+                        <p class="card-text light-300 text-dark">
+                            A los chicos les encanta simular la actividad de los mayores y las cocinas son el elemento ideal. Kitchen es una cocina atractiva y colorida con gran variedad de accesorios que complementan este excelente juego para que todo sea más divertido.
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 7 -->
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project juguetes">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./Imagenes/p7.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Juego de bloques</h5>
+                        <p class="card-text light-300 text-dark">
+                            Incentiva a usar su imaginación para construir todo aquello que desean a partir de formas geométricas básicas y a su vez trabaja sus destrezas motoras gruesas y finas.
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 8 -->
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project libros">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p8.png">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Mi familia y otros monstruos</h5>
+                        <p class="card-text light-300 text-dark">
+                            La familia de Ruth tendrá que aprender a compartir una casa abandonada con otra familia de monstruos. ¿Monstruos y humanos serán capaces de convivir?
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <!-- 9 -->
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project libros">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./Imagenes/p9.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">El Universo de Mario</h5>
+                        <p class="card-text light-300 text-dark">
+                            Únete a Mario a conocer la fabulosa historia de como se creó nuestro Universo.
+                            <br><br><br>
+                        </p>
+                        <span class="text-decoration-none text light-300">
+                            Poner en el carrito <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btnw bg2 text-white">Ant.</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btnw bg2 btn-light text-light">1</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btnw bg2 text-white">2</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btnw bg2 text-white">Sig.</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Work -->
+
+    <!-- Start Footer -->
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bxs-shapes bx-sm text-light'></i>
+                        <span class="text-dark h5">Insu</span><span class="text-light h5 semi-bold-600">Gui</span>
+                    </a>
+                    <p class="text-dark my-lg-4 my-2">
+                        La vida nos hizo amigas y nuestra pasión por enseñar, socias. Hoy junto a Firu y Tito, comenzamos la revolución de la enseñanza en América-Latina.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin-square bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp-square bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300 nS">Nuestro Sitio</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark" 
+                                href="index.html">Inicio</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                                href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                                href="work.html">Productos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-dark py-1" 
+                                href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                                href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300 tN">Trabaja con nosotros</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                            href="#">Envianos tu CV a:</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                            href="mailto:info@company.com">insuGui@rrhh.com</a> 
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                            href="mailto:info@company.com">trabajo@insuGui.com</a> 
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300 eE">Encontranos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-dark py-1" 
+                            href="tel:010-020-0340">+54 - 0555 - 3334</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-dark py-1"
+                            href="mailto:info@company.com"> info@insuGui.com</a> 
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 py-3 bg2">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 InsuGui. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+                            href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
